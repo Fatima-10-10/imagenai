@@ -1,10 +1,17 @@
 import time
 import logging
+import os
 from fastapi import Request
+
+os.makedirs("logs", exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("logs/app.log"),
+        logging.StreamHandler()
+    ]
 )
 
 logger = logging.getLogger(__name__)
@@ -14,9 +21,12 @@ async def log_requests(request: Request, call_next):
     
     logger.info(f"Incoming request: {request.method} {request.url}")
     
-    response = await call_next(request)
-    
-    process_time = time.time() - start_time
-    logger.info(f"Completed in {process_time:.4f}s - Status: {response.status_code}")
-    
-    return response
+    try:
+        response = await call_next(request)
+        process_time = time.time() - start_time
+        logger.info(f"Completed in {process_time:.4f}s - Status: {response.status_code}")
+        return response
+    except Exception as e:
+        process_time = time.time() - start_time
+        logger.error(f"Request failed in {process_time:.4f}s - Error: {str(e)}")
+        raise
