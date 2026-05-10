@@ -1,3 +1,5 @@
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
@@ -11,7 +13,7 @@ app = FastAPI(
     description="AI Image Generation App",
     version="1.0.0"
 )
-
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 app.add_middleware(BaseHTTPMiddleware, dispatch=log_requests)
 
 app.add_middleware(
@@ -23,7 +25,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to ImagenAI"}
+    return FileResponse("app/static/index.html")
 
 @app.get("/test-cache")
 def test_cache(prompt: str):
