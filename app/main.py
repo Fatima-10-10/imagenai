@@ -1,8 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
+from fastapi.responses import Response
 from app.middleware.logging_middleware import log_requests
 from app.cache import get_from_cache, set_in_cache
+from app.image_service import generate_image
 
 app = FastAPI(
     title="ImagenAI",
@@ -32,3 +34,8 @@ def test_cache(prompt: str):
     result = f"Generated image for: {prompt}"
     set_in_cache(prompt, result)
     return {"source": "api", "result": result}
+
+@app.get("/generate")
+async def generate(prompt: str = Query(..., description="Text prompt for image generation")):
+    image_bytes = await generate_image(prompt)
+    return Response(content=image_bytes, media_type="image/png")
