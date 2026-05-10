@@ -7,6 +7,7 @@ from fastapi.responses import Response
 from app.middleware.logging_middleware import log_requests
 from app.cache import get_from_cache, set_in_cache
 from app.image_service import generate_image
+from app.cache import get_from_cache, set_in_cache, get_cache_stats
 
 app = FastAPI(
     title="ImagenAI",
@@ -39,5 +40,14 @@ def test_cache(prompt: str):
 
 @app.get("/generate")
 async def generate(prompt: str = Query(..., description="Text prompt for image generation")):
+    cached = get_from_cache(prompt)
+    if cached:
+        return Response(content=cached, media_type="image/png")
+    
     image_bytes = await generate_image(prompt)
+    set_in_cache(prompt, image_bytes)
     return Response(content=image_bytes, media_type="image/png")
+
+@app.get("/cache-stats")
+def cache_stats():
+    return get_cache_stats()    
