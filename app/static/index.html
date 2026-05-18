@@ -14,10 +14,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       padding: 2rem;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #a78bfa; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #a78bfa; margin-top: 2rem; }
     p.subtitle { color: #888; margin-bottom: 2rem; }
     .input-row {
       display: flex;
@@ -53,13 +52,93 @@
       border-radius: 12px;
       box-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
     }
+
+    /* History */
+    #history-section {
+      margin-top: 3rem;
+      width: 100%;
+      max-width: 900px;
+    }
+    #history-section h2 { color: #a78bfa; margin-bottom: 1rem; }
+    #history-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .history-card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 0.8rem;
+      border: 1px solid #333;
+      width: 200px;
+      cursor: pointer;
+      transition: border 0.2s;
+    }
+    .history-card:hover { border-color: #a78bfa; }
+    .history-card p.prompt {
+      color: #a78bfa;
+      font-size: 0.85rem;
+      margin-bottom: 0.4rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .history-card p.meta {
+      color: #888;
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .history-card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* Modal */
+    #modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #modal.active { display: flex; }
+    #modal img {
+      max-width: 80%;
+      max-height: 70vh;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgba(124,58,237,0.4);
+    }
+    #modal-prompt {
+      color: #a78bfa;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .modal-controls {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      align-items: center;
+    }
+    .modal-controls button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1.2rem;
+    }
+    #close-modal {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      background: transparent;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
   </style>
 </head>
-
-<div id="history-section" style="margin-top: 3rem; width: 100%; max-width: 900px;">
-    <h2 style="color: #a78bfa; margin-bottom: 1rem;">History</h2>
-    <div id="history-list" style="display: flex; flex-wrap: wrap; gap: 1rem;"></div>
-  </div>
 <body>
   <h1>ImagenAI</h1>
   <p class="subtitle">Type a prompt and generate an image with AI</p>
@@ -72,7 +151,28 @@
   <p id="status"></p>
   <div id="result"></div>
 
+  <!-- History below search bar -->
+  <div id="history-section">
+    <h2>Past Generations</h2>
+    <div id="history-list"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal">
+    <button id="close-modal" onclick="closeModal()">✕</button>
+    <img id="modal-img" src="" alt="Full image" />
+    <p id="modal-prompt"></p>
+    <div class="modal-controls">
+      <button onclick="prevImage()">&#8592;</button>
+      <span id="modal-counter" style="color:#888;"></span>
+      <button onclick="nextImage()">&#8594;</button>
+    </div>
+  </div>
+
   <script>
+    let historyData = [];
+    let currentIndex = 0;
+
     async function generate() {
       const prompt = document.getElementById('prompt').value.trim();
       if (!prompt) return;
@@ -85,7 +185,6 @@
       result.innerHTML = '';
 
       try {
-        // Step 1: POST /generate karo
         status.textContent = 'Submitting request...';
         const response = await fetch(`/generate?prompt=${encodeURIComponent(prompt)}`, {
           method: 'POST'
@@ -94,7 +193,6 @@
         const data = await response.json();
         const requestId = data.request_id;
 
-        // Step 2: Polling shuru karo
         status.textContent = 'Generating image...';
         const interval = setInterval(async () => {
           const statusRes = await fetch(`/status/${requestId}`);
@@ -105,6 +203,7 @@
             result.innerHTML = `<img src="/image/${requestId}" alt="Generated image" />`;
             status.textContent = 'Done!';
             btn.disabled = false;
+            loadHistory();
           } else if (statusData.status === 'FAILED') {
             clearInterval(interval);
             status.textContent = 'Error: Image generation failed.';
@@ -118,31 +217,73 @@
       }
     }
 
+    async function loadHistory() {
+      const historyList = document.getElementById('history-list');
+      const res = await fetch('/history');
+      historyData = await res.json();
+
+      const completed = historyData.filter(i => i.status === 'COMPLETED');
+
+      if (completed.length === 0) {
+        historyList.innerHTML = '<p style="color:#888;">No generations yet.</p>';
+        return;
+      }
+
+      historyList.innerHTML = completed.map((item, index) => `
+  <div class="history-card">
+    <p class="prompt">${item.prompt}</p>
+    <p class="meta">${new Date(item.created_at).toLocaleString()}</p>
+    <img src="/image/${item.request_id}" alt="${item.prompt}" onclick="openModal(${index})" />
+    <button onclick="deleteImage('${item.request_id}')" style="margin-top: 0.5rem; width: 100%; background: #3a0f0f; color: #f87171; border: 1px solid #7f1d1d; border-radius: 6px; padding: 0.4rem; cursor: pointer; font-size: 0.8rem;">🗑 Delete</button>
+  </div>
+`).join('');
+    }
+
+    function openModal(index) {
+      const completed = historyData.filter(i => i.status === 'COMPLETED');
+      currentIndex = index;
+      updateModal(completed);
+      document.getElementById('modal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+    }
+
+    function prevImage() {
+      const completed = historyData.filter(i => i.status === 'COMPLETED');
+      currentIndex = (currentIndex - 1 + completed.length) % completed.length;
+      updateModal(completed);
+    }
+
+    function nextImage() {
+      const completed = historyData.filter(i => i.status === 'COMPLETED');
+      currentIndex = (currentIndex + 1) % completed.length;
+      updateModal(completed);
+    }
+
+    function updateModal(completed) {
+      const item = completed[currentIndex];
+      document.getElementById('modal-img').src = `/image/${item.request_id}`;
+      document.getElementById('modal-prompt').textContent = item.prompt;
+      document.getElementById('modal-counter').textContent = `${currentIndex + 1} / ${completed.length}`;
+    }
+
     document.getElementById('prompt').addEventListener('keydown', function(e) {
       if (e.key === 'Enter') generate();
     });
 
-  async function loadHistory() {
-      const historyList = document.getElementById('history-list');
-      const res = await fetch('/history');
-      const data = await res.json();
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'Escape') closeModal();
+    });
 
-      if (data.length === 0) {
-        historyList.innerHTML = '<p style="color: #888;">No generations yet.</p>';
-        return;
-      }
-
-      historyList.innerHTML = data.map(item => `
-        <div style="background: #1a1a1a; border-radius: 8px; padding: 0.8rem; border: 1px solid #333; width: 200px;">
-          <p style="color: #a78bfa; font-size: 0.85rem; margin-bottom: 0.4rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.prompt}</p>
-          <p style="color: #888; font-size: 0.75rem; margin-bottom: 0.5rem;">${item.status}</p>
-          ${item.status === 'COMPLETED' ? `<img src="/image/${item.request_id}" style="width:100%; border-radius: 6px;" />` : ''}
-        </div>
-      `).join('');
-    }
-
-    loadHistory();
-</script>
-  
+    async function deleteImage(requestId) {
+  if (!confirm('Delete this image?')) return;
+  await fetch(`/image/${requestId}`, { method: 'DELETE' });
+  loadHistory();
+}
+  </script>
 </body>
 </html>

@@ -150,3 +150,329 @@
 2026-05-18 18:14:08,314 - INFO - Incoming request: GET http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
 2026-05-18 18:14:08,318 - INFO - Completed in 0.0060s - Status: 200
 2026-05-18 18:14:08,319 - INFO - Completed in 0.0051s - Status: 200
+2026-05-18 18:19:56,331 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:19:56,455 - INFO - Completed in 0.1238s - Status: 200
+2026-05-18 18:19:56,471 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:19:56,475 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:19:56,478 - INFO - Completed in 0.0030s - Status: 404
+2026-05-18 18:19:56,480 - INFO - Completed in 0.0094s - Status: 200
+2026-05-18 18:19:56,484 - INFO - Incoming request: GET http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:19:56,485 - INFO - Incoming request: GET http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:19:56,487 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 18:19:56,498 - INFO - Completed in 0.0131s - Status: 200
+2026-05-18 18:19:56,499 - INFO - Completed in 0.0121s - Status: 200
+2026-05-18 18:19:56,501 - INFO - Completed in 0.0141s - Status: 200
+2026-05-18 18:20:15,409 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cow%20eating%20cat
+2026-05-18 18:20:15,421 - INFO - Completed in 0.0120s - Status: 200
+2026-05-18 18:20:16,100 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:20:20,031 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:20:21,112 - INFO - Incoming request: GET http://127.0.0.1:8000/status/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:20:21,117 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 18:20:21,122 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:20:21,128 - INFO - Completed in 0.0060s - Status: 200
+2026-05-18 18:20:26,925 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cow%20eating%20cake
+2026-05-18 18:20:26,937 - INFO - Completed in 0.0120s - Status: 200
+2026-05-18 18:20:27,350 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:20:29,946 - INFO - Incoming request: GET http://127.0.0.1:8000/status/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:20:29,954 - INFO - Completed in 0.0081s - Status: 200
+2026-05-18 18:20:29,959 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:20:29,963 - INFO - Completed in 0.0036s - Status: 200
+2026-05-18 18:20:34,597 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:20:34,599 - INFO - Completed in 0.0019s - Status: 200
+2026-05-18 18:20:34,621 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:20:34,625 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:20:34,627 - INFO - Completed in 0.0020s - Status: 404
+2026-05-18 18:20:34,629 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 18:20:34,633 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:20:34,634 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:20:34,641 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 18:20:34,642 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 18:22:00,290 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:22:00,400 - INFO - Completed in 0.1102s - Status: 200
+2026-05-18 18:22:00,413 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:22:00,415 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:22:00,416 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 18:22:00,423 - INFO - Completed in 0.0103s - Status: 200
+2026-05-18 18:22:00,428 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:22:00,428 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:22:00,429 - INFO - Incoming request: GET http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:22:00,429 - INFO - Incoming request: GET http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:22:00,434 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 18:22:00,443 - INFO - Completed in 0.0149s - Status: 200
+2026-05-18 18:22:00,445 - INFO - Completed in 0.0169s - Status: 200
+2026-05-18 18:22:00,445 - INFO - Completed in 0.0159s - Status: 200
+2026-05-18 18:22:00,449 - INFO - Completed in 0.0198s - Status: 200
+2026-05-18 18:22:00,450 - INFO - Completed in 0.0162s - Status: 200
+2026-05-18 18:22:11,929 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cat%20eating%20cow
+2026-05-18 18:22:11,941 - INFO - Completed in 0.0120s - Status: 200
+2026-05-18 18:22:13,579 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-dev "HTTP/1.1 200 OK"
+2026-05-18 18:22:14,277 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev "HTTP/1.1 410 Gone"
+2026-05-18 18:22:14,955 - INFO - Incoming request: GET http://127.0.0.1:8000/status/38603b62-276a-436c-936a-9451804c7515
+2026-05-18 18:22:14,960 - INFO - Completed in 0.0051s - Status: 200
+2026-05-18 18:22:25,211 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:22:25,213 - INFO - Completed in 0.0024s - Status: 200
+2026-05-18 18:22:25,235 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:22:25,242 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:22:25,243 - INFO - Completed in 0.0011s - Status: 404
+2026-05-18 18:22:25,244 - INFO - Completed in 0.0085s - Status: 200
+2026-05-18 18:22:25,250 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:22:25,252 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:22:25,257 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 18:22:25,257 - INFO - Completed in 0.0075s - Status: 200
+2026-05-18 18:22:57,377 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cat%20eating%20cow
+2026-05-18 18:22:57,389 - INFO - Completed in 0.0117s - Status: 200
+2026-05-18 18:22:57,730 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev "HTTP/1.1 410 Gone"
+2026-05-18 18:23:00,399 - INFO - Incoming request: GET http://127.0.0.1:8000/status/b44fbcb6-8d76-4ea6-9834-a24b19465b39
+2026-05-18 18:23:00,406 - INFO - Completed in 0.0071s - Status: 200
+2026-05-18 18:23:15,893 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cat%20eating%20cow
+2026-05-18 18:23:15,904 - INFO - Completed in 0.0109s - Status: 200
+2026-05-18 18:23:16,587 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:23:17,420 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:23:18,914 - INFO - Incoming request: GET http://127.0.0.1:8000/status/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:23:18,919 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 18:23:18,923 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:23:18,930 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 18:23:22,967 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:23:23,088 - INFO - Completed in 0.1215s - Status: 200
+2026-05-18 18:23:23,105 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:23:23,106 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:23:23,108 - INFO - Completed in 0.0011s - Status: 404
+2026-05-18 18:23:23,114 - INFO - Completed in 0.0081s - Status: 200
+2026-05-18 18:23:23,121 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:23:23,122 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:23:23,123 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:23:23,124 - INFO - Incoming request: GET http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:23:23,136 - INFO - Completed in 0.0125s - Status: 200
+2026-05-18 18:23:23,137 - INFO - Completed in 0.0160s - Status: 200
+2026-05-18 18:23:23,138 - INFO - Completed in 0.0159s - Status: 200
+2026-05-18 18:23:23,140 - INFO - Completed in 0.0160s - Status: 200
+2026-05-18 18:28:25,631 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:28:25,740 - INFO - Completed in 0.1090s - Status: 200
+2026-05-18 18:28:25,812 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:28:25,818 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:28:25,820 - INFO - Completed in 0.0020s - Status: 404
+2026-05-18 18:28:25,823 - INFO - Completed in 0.0100s - Status: 200
+2026-05-18 18:28:25,830 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:28:25,831 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:28:25,833 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:28:25,836 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 18:28:25,838 - INFO - Incoming request: GET http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:28:25,838 - INFO - Incoming request: GET http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:28:25,851 - INFO - Completed in 0.0221s - Status: 200
+2026-05-18 18:28:25,854 - INFO - Completed in 0.0231s - Status: 200
+2026-05-18 18:28:25,855 - INFO - Completed in 0.0166s - Status: 200
+2026-05-18 18:28:25,855 - INFO - Completed in 0.0216s - Status: 200
+2026-05-18 18:28:25,859 - INFO - Completed in 0.0210s - Status: 200
+2026-05-18 18:28:25,868 - INFO - Completed in 0.0320s - Status: 200
+2026-05-18 18:28:52,287 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=boy%20eating%20choco%20cake
+2026-05-18 18:28:52,302 - INFO - Completed in 0.0164s - Status: 200
+2026-05-18 18:28:52,931 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:28:56,368 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:28:57,475 - INFO - Incoming request: GET http://127.0.0.1:8000/status/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:28:57,482 - INFO - Completed in 0.0071s - Status: 200
+2026-05-18 18:28:57,486 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:28:57,488 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:28:57,495 - INFO - Completed in 0.0090s - Status: 200
+2026-05-18 18:28:57,499 - INFO - Completed in 0.0110s - Status: 200
+2026-05-18 18:31:27,721 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:31:27,725 - INFO - Completed in 0.0035s - Status: 200
+2026-05-18 18:31:27,775 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:31:27,782 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:31:27,783 - INFO - Completed in 0.0011s - Status: 404
+2026-05-18 18:31:27,784 - INFO - Completed in 0.0085s - Status: 200
+2026-05-18 18:31:27,789 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:31:27,790 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:31:27,825 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:31:27,826 - INFO - Incoming request: GET http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:31:27,826 - INFO - Incoming request: GET http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:31:27,827 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:31:27,835 - INFO - Completed in 0.0466s - Status: 200
+2026-05-18 18:31:27,838 - INFO - Completed in 0.0112s - Status: 200
+2026-05-18 18:31:27,840 - INFO - Completed in 0.0152s - Status: 200
+2026-05-18 18:31:27,843 - INFO - Completed in 0.0162s - Status: 200
+2026-05-18 18:31:27,844 - INFO - Completed in 0.0172s - Status: 200
+2026-05-18 18:31:27,849 - INFO - Completed in 0.0594s - Status: 200
+2026-05-18 18:31:27,900 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 18:31:27,909 - INFO - Completed in 0.0093s - Status: 200
+2026-05-18 18:32:37,837 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:32:37,840 - INFO - Completed in 0.0030s - Status: 200
+2026-05-18 18:32:37,889 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:32:37,894 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 18:32:37,897 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:32:37,898 - INFO - Completed in 0.0020s - Status: 404
+2026-05-18 18:32:37,900 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:32:37,901 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:32:37,904 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:32:37,907 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:32:37,916 - INFO - Completed in 0.0162s - Status: 200
+2026-05-18 18:32:37,916 - INFO - Completed in 0.0152s - Status: 200
+2026-05-18 18:32:37,919 - INFO - Completed in 0.0112s - Status: 200
+2026-05-18 18:32:37,919 - INFO - Completed in 0.0152s - Status: 200
+2026-05-18 18:32:41,716 - INFO - Incoming request: DELETE http://127.0.0.1:8000/delete/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:32:41,718 - INFO - Completed in 0.0020s - Status: 404
+2026-05-18 18:32:41,723 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:32:41,727 - INFO - Completed in 0.0040s - Status: 200
+2026-05-18 18:32:45,086 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:32:45,089 - INFO - Completed in 0.0030s - Status: 200
+2026-05-18 18:32:45,110 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:32:45,114 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:32:45,115 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 18:32:45,118 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 18:32:48,668 - INFO - Incoming request: DELETE http://127.0.0.1:8000/delete/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:32:48,669 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 18:32:48,672 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:32:48,677 - INFO - Completed in 0.0056s - Status: 200
+2026-05-18 18:33:20,229 - INFO - Incoming request: GET http://127.0.0.1:8000/docs
+2026-05-18 18:33:20,230 - INFO - Completed in 0.0010s - Status: 200
+2026-05-18 18:33:21,381 - INFO - Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-05-18 18:33:21,382 - ERROR - Request failed in 0.0010s - Error: '_SpecialForm' object has no attribute 'replace'
+2026-05-18 18:35:09,645 - INFO - Incoming request: DELETE http://127.0.0.1:8000/delete/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:35:09,646 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 18:35:09,650 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:35:09,654 - INFO - Completed in 0.0041s - Status: 200
+2026-05-18 18:35:23,923 - INFO - Incoming request: DELETE http://127.0.0.1:8000/delete/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:35:23,924 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 18:35:23,930 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:35:23,934 - INFO - Completed in 0.0036s - Status: 200
+2026-05-18 18:36:16,445 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:36:16,449 - INFO - Completed in 0.0040s - Status: 200
+2026-05-18 18:36:16,498 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:36:16,499 - INFO - Completed in 0.0011s - Status: 404
+2026-05-18 18:36:33,927 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 18:36:33,929 - INFO - Completed in 0.0019s - Status: 200
+2026-05-18 18:36:33,957 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 18:36:33,959 - INFO - Completed in 0.0020s - Status: 404
+2026-05-18 18:36:41,318 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cat%20eating%20cake
+2026-05-18 18:36:41,347 - INFO - Completed in 0.0296s - Status: 200
+2026-05-18 18:36:45,866 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:36:46,710 - INFO - Incoming request: GET http://127.0.0.1:8000/status/9e295f80-d3f2-40dc-9ee6-2dca97fca5b8
+2026-05-18 18:36:46,715 - INFO - Completed in 0.0051s - Status: 200
+2026-05-18 18:36:46,721 - INFO - Incoming request: GET http://127.0.0.1:8000/image/9e295f80-d3f2-40dc-9ee6-2dca97fca5b8
+2026-05-18 18:36:46,724 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:36:46,728 - INFO - Completed in 0.0049s - Status: 200
+2026-05-18 18:36:46,731 - INFO - Completed in 0.0100s - Status: 200
+2026-05-18 18:36:46,737 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:36:46,740 - INFO - Incoming request: GET http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:36:46,740 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:36:46,741 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:36:46,745 - INFO - Incoming request: GET http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:36:46,756 - INFO - Completed in 0.0154s - Status: 200
+2026-05-18 18:36:46,757 - INFO - Completed in 0.0201s - Status: 200
+2026-05-18 18:36:46,760 - INFO - Completed in 0.0200s - Status: 200
+2026-05-18 18:36:46,763 - INFO - Completed in 0.0220s - Status: 200
+2026-05-18 18:36:46,764 - INFO - Completed in 0.0190s - Status: 200
+2026-05-18 18:36:46,812 - INFO - Incoming request: GET http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:36:46,814 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 18:36:46,825 - INFO - Completed in 0.0135s - Status: 200
+2026-05-18 18:36:46,827 - INFO - Completed in 0.0129s - Status: 200
+2026-05-18 18:36:54,000 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=boy%20eating%20choco
+2026-05-18 18:36:54,010 - INFO - Completed in 0.0097s - Status: 200
+2026-05-18 18:36:57,172 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:36:57,933 - INFO - Incoming request: GET http://127.0.0.1:8000/status/c2cf38af-bf9b-4d7d-98f4-047301cb2e47
+2026-05-18 18:36:57,940 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 18:36:57,945 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c2cf38af-bf9b-4d7d-98f4-047301cb2e47
+2026-05-18 18:36:57,947 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:36:57,952 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 18:36:57,955 - INFO - Completed in 0.0100s - Status: 200
+2026-05-18 18:37:07,720 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/c853518b-29dd-4a72-98d6-9e37e984b7cf
+2026-05-18 18:37:07,732 - INFO - Completed in 0.0121s - Status: 200
+2026-05-18 18:37:07,737 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:07,745 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 18:37:12,091 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/91ffcae6-a63b-4d93-8cba-d41f9a37e9a0
+2026-05-18 18:37:12,105 - INFO - Completed in 0.0135s - Status: 200
+2026-05-18 18:37:12,110 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:12,116 - INFO - Completed in 0.0062s - Status: 200
+2026-05-18 18:37:13,771 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/71b0f767-2ac4-4537-902a-e7af17bfb482
+2026-05-18 18:37:13,783 - INFO - Completed in 0.0120s - Status: 200
+2026-05-18 18:37:13,787 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:13,794 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 18:37:18,364 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/4f4382d3-2b6a-48fe-ac14-e3123d8ddf17
+2026-05-18 18:37:18,378 - INFO - Completed in 0.0138s - Status: 200
+2026-05-18 18:37:18,382 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:18,390 - INFO - Completed in 0.0081s - Status: 200
+2026-05-18 18:37:19,986 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/e677f35f-9fdd-4194-b95e-740396c1e579
+2026-05-18 18:37:19,996 - INFO - Completed in 0.0102s - Status: 200
+2026-05-18 18:37:20,001 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:20,008 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 18:37:40,187 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/9e295f80-d3f2-40dc-9ee6-2dca97fca5b8
+2026-05-18 18:37:40,199 - INFO - Completed in 0.0119s - Status: 200
+2026-05-18 18:37:40,205 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:40,213 - INFO - Completed in 0.0072s - Status: 200
+2026-05-18 18:37:43,436 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/c6412246-1639-4dae-aa15-b34cd9df52b5
+2026-05-18 18:37:43,450 - INFO - Completed in 0.0140s - Status: 200
+2026-05-18 18:37:43,455 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:43,460 - INFO - Completed in 0.0049s - Status: 200
+2026-05-18 18:37:49,597 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 18:37:49,611 - INFO - Completed in 0.0139s - Status: 200
+2026-05-18 18:37:49,615 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:37:49,623 - INFO - Completed in 0.0083s - Status: 200
+2026-05-18 18:37:56,051 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cat%20eating%20choco
+2026-05-18 18:37:56,062 - INFO - Completed in 0.0112s - Status: 200
+2026-05-18 18:38:00,543 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 18:38:01,330 - INFO - Incoming request: GET http://127.0.0.1:8000/status/e9db2e4e-fe7f-4c0c-855e-cd8fccea0dbd
+2026-05-18 18:38:01,336 - INFO - Completed in 0.0060s - Status: 200
+2026-05-18 18:38:01,341 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e9db2e4e-fe7f-4c0c-855e-cd8fccea0dbd
+2026-05-18 18:38:01,343 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:38:01,348 - INFO - Completed in 0.0051s - Status: 200
+2026-05-18 18:38:01,349 - INFO - Completed in 0.0081s - Status: 200
+2026-05-18 18:48:49,391 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:48:49,399 - INFO - Completed in 0.0081s - Status: 200
+2026-05-18 18:51:06,954 - INFO - Incoming request: GET http://127.0.0.1:8000/stats
+2026-05-18 18:51:06,972 - INFO - Completed in 0.0177s - Status: 200
+2026-05-18 18:51:45,901 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 18:51:45,905 - INFO - Completed in 0.0040s - Status: 200
+2026-05-18 18:52:30,411 - INFO - Incoming request: GET http://127.0.0.1:8000/stats
+2026-05-18 18:52:30,420 - INFO - Completed in 0.0079s - Status: 200
+2026-05-18 18:56:40,076 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=a%20cat%20sitting%20on%20the%20moon
+2026-05-18 18:56:40,077 - INFO - Completed in 0.0009s - Status: 405
+2026-05-18 18:56:49,201 - INFO - Incoming request: GET http://127.0.0.1:8000/generate
+2026-05-18 18:56:49,202 - INFO - Completed in 0.0010s - Status: 405
+2026-05-18 18:59:33,997 - INFO - Incoming request: GET http://127.0.0.1:8000/docs
+2026-05-18 18:59:33,997 - INFO - Completed in 0.0010s - Status: 200
+2026-05-18 18:59:34,129 - INFO - Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-05-18 18:59:34,130 - ERROR - Request failed in 0.0009s - Error: '_SpecialForm' object has no attribute 'replace'
+2026-05-18 19:00:14,785 - INFO - Incoming request: GET http://127.0.0.1:8000/docs
+2026-05-18 19:00:14,786 - INFO - Completed in 0.0010s - Status: 200
+2026-05-18 19:00:14,827 - INFO - Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-05-18 19:00:14,827 - ERROR - Request failed in 0.0000s - Error: '_SpecialForm' object has no attribute 'replace'
+2026-05-18 19:01:09,816 - INFO - Incoming request: GET http://127.0.0.1:8000/docs
+2026-05-18 19:01:09,817 - INFO - Completed in 0.0010s - Status: 200
+2026-05-18 19:01:11,122 - INFO - Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-05-18 19:01:11,127 - INFO - Completed in 0.0048s - Status: 200
+2026-05-18 19:01:24,403 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=make%20a%20tree
+2026-05-18 19:01:24,418 - INFO - Completed in 0.0149s - Status: 200
+2026-05-18 19:01:25,957 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 19:01:32,865 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 19:02:01,359 - INFO - Incoming request: GET http://127.0.0.1:8000/status/0cc08621-2da5-498f-9e7b-00028c898987
+2026-05-18 19:02:01,366 - INFO - Completed in 0.0068s - Status: 200
+2026-05-18 19:02:19,732 - INFO - Incoming request: GET http://127.0.0.1:8000/status/0cc08621-2da5-498f-9e7b-00028c898987
+2026-05-18 19:02:19,741 - INFO - Completed in 0.0085s - Status: 200
+2026-05-18 19:02:31,366 - INFO - Incoming request: GET http://127.0.0.1:8000/image/0cc08621-2da5-498f-9e7b-00028c898987
+2026-05-18 19:02:31,370 - INFO - Completed in 0.0041s - Status: 200
+2026-05-18 19:03:04,336 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/0cc08621-2da5-498f-9e7b-00028c898987
+2026-05-18 19:03:04,354 - INFO - Completed in 0.0184s - Status: 200
+2026-05-18 19:03:16,326 - INFO - Incoming request: GET http://127.0.0.1:8000/stats
+2026-05-18 19:03:16,337 - INFO - Completed in 0.0110s - Status: 200
+2026-05-18 19:03:51,306 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:03:51,444 - INFO - Completed in 0.1376s - Status: 200
+2026-05-18 19:04:10,865 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=make%20spinal%20cord
+2026-05-18 19:04:10,874 - INFO - Completed in 0.0091s - Status: 200
+2026-05-18 19:04:17,647 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 19:04:18,334 - INFO - Incoming request: GET http://127.0.0.1:8000/status/5ae8ce47-bb65-4135-841a-fc420ff80541
+2026-05-18 19:04:18,337 - INFO - Completed in 0.0030s - Status: 200
+2026-05-18 19:04:18,341 - INFO - Incoming request: GET http://127.0.0.1:8000/status/5ae8ce47-bb65-4135-841a-fc420ff80541
+2026-05-18 19:04:18,344 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:04:18,347 - INFO - Incoming request: GET http://127.0.0.1:8000/image/5ae8ce47-bb65-4135-841a-fc420ff80541
+2026-05-18 19:04:18,348 - INFO - Completed in 0.0077s - Status: 200
+2026-05-18 19:04:18,354 - INFO - Completed in 0.0100s - Status: 200
+2026-05-18 19:04:18,355 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 19:04:18,357 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:04:18,362 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 19:04:18,369 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e9db2e4e-fe7f-4c0c-855e-cd8fccea0dbd
+2026-05-18 19:04:18,370 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c2cf38af-bf9b-4d7d-98f4-047301cb2e47
+2026-05-18 19:04:18,377 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 19:04:18,379 - INFO - Completed in 0.0100s - Status: 200
+2026-05-18 19:04:25,989 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:04:25,991 - INFO - Completed in 0.0020s - Status: 200
+2026-05-18 19:04:26,021 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 19:04:26,022 - INFO - Completed in 0.0010s - Status: 404
