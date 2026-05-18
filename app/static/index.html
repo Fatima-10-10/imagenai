@@ -55,6 +55,11 @@
     }
   </style>
 </head>
+
+<div id="history-section" style="margin-top: 3rem; width: 100%; max-width: 900px;">
+    <h2 style="color: #a78bfa; margin-bottom: 1rem;">History</h2>
+    <div id="history-list" style="display: flex; flex-wrap: wrap; gap: 1rem;"></div>
+  </div>
 <body>
   <h1>ImagenAI</h1>
   <p class="subtitle">Type a prompt and generate an image with AI</p>
@@ -77,20 +82,38 @@
       const result = document.getElementById('result');
 
       btn.disabled = true;
-      status.textContent = 'Generating...';
       result.innerHTML = '';
 
       try {
-        const response = await fetch(`/generate?prompt=${encodeURIComponent(prompt)}`);
+        // Step 1: POST /generate karo
+        status.textContent = 'Submitting request...';
+        const response = await fetch(`/generate?prompt=${encodeURIComponent(prompt)}`, {
+          method: 'POST'
+        });
         if (!response.ok) throw new Error('Generation failed');
+        const data = await response.json();
+        const requestId = data.request_id;
 
-        const blob = await response.blob();
-        const url = URL.createObjectURL(blob);
-        result.innerHTML = `<img src="${url}" alt="Generated image" />`;
-        status.textContent = 'Done!';
+        // Step 2: Polling shuru karo
+        status.textContent = 'Generating image...';
+        const interval = setInterval(async () => {
+          const statusRes = await fetch(`/status/${requestId}`);
+          const statusData = await statusRes.json();
+
+          if (statusData.status === 'COMPLETED') {
+            clearInterval(interval);
+            result.innerHTML = `<img src="/image/${requestId}" alt="Generated image" />`;
+            status.textContent = 'Done!';
+            btn.disabled = false;
+          } else if (statusData.status === 'FAILED') {
+            clearInterval(interval);
+            status.textContent = 'Error: Image generation failed.';
+            btn.disabled = false;
+          }
+        }, 3000);
+
       } catch (err) {
         status.textContent = 'Error: ' + err.message;
-      } finally {
         btn.disabled = false;
       }
     }
@@ -98,6 +121,28 @@
     document.getElementById('prompt').addEventListener('keydown', function(e) {
       if (e.key === 'Enter') generate();
     });
-  </script>
+
+  async function loadHistory() {
+      const historyList = document.getElementById('history-list');
+      const res = await fetch('/history');
+      const data = await res.json();
+
+      if (data.length === 0) {
+        historyList.innerHTML = '<p style="color: #888;">No generations yet.</p>';
+        return;
+      }
+
+      historyList.innerHTML = data.map(item => `
+        <div style="background: #1a1a1a; border-radius: 8px; padding: 0.8rem; border: 1px solid #333; width: 200px;">
+          <p style="color: #a78bfa; font-size: 0.85rem; margin-bottom: 0.4rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${item.prompt}</p>
+          <p style="color: #888; font-size: 0.75rem; margin-bottom: 0.5rem;">${item.status}</p>
+          ${item.status === 'COMPLETED' ? `<img src="/image/${item.request_id}" style="width:100%; border-radius: 6px;" />` : ''}
+        </div>
+      `).join('');
+    }
+
+    loadHistory();
+</script>
+  
 </body>
 </html>
