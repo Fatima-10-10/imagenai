@@ -14,3 +14,78 @@
 2026-05-11 14:45:02,961 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
 2026-05-11 14:45:07,332 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
 2026-05-11 14:45:07,615 - INFO - Completed in 6.1548s - Status: 200
+2026-05-11 17:21:23,253 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-11 17:21:23,506 - INFO - Completed in 0.2536s - Status: 200
+2026-05-11 17:21:46,455 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20a%20fairy
+2026-05-11 17:21:47,972 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:21:52,167 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:21:56,224 - INFO - Completed in 9.7685s - Status: 200
+2026-05-11 17:27:01,486 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20aasmani%20saand
+2026-05-11 17:27:02,995 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:27:07,249 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:27:08,645 - INFO - Completed in 7.1592s - Status: 200
+2026-05-11 17:28:02,780 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20a%20dunger
+2026-05-11 17:28:08,501 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:28:09,636 - INFO - Completed in 6.8566s - Status: 200
+2026-05-11 17:28:40,883 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20a%20joint%20fairy
+2026-05-11 17:28:44,593 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:28:45,727 - INFO - Completed in 4.8439s - Status: 200
+2026-05-11 17:29:27,189 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%2010%20blessings%20in%20my%20life
+2026-05-11 17:29:31,573 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:29:32,981 - INFO - Completed in 5.7924s - Status: 200
+2026-05-11 17:32:01,764 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%2010%20realistic%20blessings%20in%20my%20life
+2026-05-11 17:32:06,191 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:32:07,404 - INFO - Completed in 5.6397s - Status: 200
+2026-05-11 17:32:49,492 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20huggingface
+2026-05-11 17:32:53,586 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:32:54,949 - INFO - Completed in 5.4573s - Status: 200
+2026-05-11 17:35:03,381 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20claude
+2026-05-11 17:35:08,353 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:35:09,165 - INFO - Completed in 5.7835s - Status: 200
+2026-05-11 17:35:22,412 - INFO - Incoming request: GET http://127.0.0.1:8000/generate?prompt=make%20an%20image%20of%20paru
+2026-05-11 17:35:29,372 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-11 17:35:30,400 - INFO - Completed in 7.9880s - Status: 200
+2026-05-15 10:37:39,387 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-15 10:37:40,469 - INFO - Completed in 1.0825s - Status: 200
+2026-05-15 19:16:25,046 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-15 19:16:25,335 - INFO - Completed in 0.2886s - Status: 200
+2026-05-18 15:53:28,445 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 15:53:28,912 - INFO - Completed in 0.4677s - Status: 200
+2026-05-18 17:05:42,911 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 17:05:43,174 - INFO - Completed in 0.2630s - Status: 200
+2026-05-18 17:11:14,167 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 17:11:14,412 - INFO - Completed in 0.2450s - Status: 200
+2026-05-18 17:11:45,258 - INFO - Incoming request: GET http://127.0.0.1:8000/docs
+2026-05-18 17:11:45,259 - INFO - Completed in 0.0010s - Status: 200
+2026-05-18 17:11:46,463 - INFO - Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-05-18 17:11:46,476 - INFO - Completed in 0.0127s - Status: 200
+2026-05-18 17:12:51,310 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=make%20a%20cat%20eating%20cake
+2026-05-18 17:12:51,317 - ERROR - Request failed in 0.0066s - Error: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: INSERT INTO image_requests (id, prompt, status, image_path, created_at) VALUES (?, ?, ?, ?, ?)]
+[parameters: [{'id': 'dc1bcb2d-4608-47e9-bbd6-6dbf3a638e4b', 'status': 'QUEUED', 'prompt': 'make a cat eating cake', 'image_path': None}]]
+2026-05-18 17:13:01,868 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=make%20a%20cat%20eating%20cake
+2026-05-18 17:13:01,871 - ERROR - Request failed in 0.0030s - Error: (builtins.AttributeError) 'str' object has no attribute 'hex'
+[SQL: INSERT INTO image_requests (id, prompt, status, image_path, created_at) VALUES (?, ?, ?, ?, ?)]
+[parameters: [{'id': 'dea16c08-4298-4ad2-a58f-078b99f4d3ef', 'status': 'QUEUED', 'prompt': 'make a cat eating cake', 'image_path': None}]]
+2026-05-18 17:15:28,138 - INFO - Incoming request: GET http://127.0.0.1:8000/docs
+2026-05-18 17:15:28,138 - INFO - Completed in 0.0000s - Status: 200
+2026-05-18 17:15:28,360 - INFO - Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-05-18 17:15:28,367 - INFO - Completed in 0.0066s - Status: 200
+2026-05-18 17:15:43,910 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=cat%20eating%20cake
+2026-05-18 17:15:43,926 - INFO - Completed in 0.0158s - Status: 200
+2026-05-18 17:15:45,412 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 17:15:49,652 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 17:16:41,020 - INFO - Incoming request: GET http://127.0.0.1:8000/status/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 17:16:41,023 - INFO - Completed in 0.0030s - Status: 200
+2026-05-18 17:17:42,904 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 17:17:42,910 - INFO - Completed in 0.0060s - Status: 200
+2026-05-18 17:17:56,966 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d76
+2026-05-18 17:17:56,969 - INFO - Completed in 0.0030s - Status: 404
+2026-05-18 17:17:57,005 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
+2026-05-18 17:17:57,006 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 17:18:13,592 - INFO - Incoming request: GET http://127.0.0.1:8000/image/8b187e5a-e921-49c9-9e36-330bce50d762
+2026-05-18 17:18:13,596 - INFO - Completed in 0.0045s - Status: 200
+2026-05-18 17:19:00,985 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 17:19:00,988 - INFO - Completed in 0.0030s - Status: 200
+2026-05-18 17:19:11,733 - INFO - Incoming request: GET http://127.0.0.1:8000/stats
+2026-05-18 17:19:11,751 - INFO - Completed in 0.0187s - Status: 200
