@@ -476,3 +476,61 @@
 2026-05-18 19:04:25,991 - INFO - Completed in 0.0020s - Status: 200
 2026-05-18 19:04:26,021 - INFO - Incoming request: GET http://127.0.0.1:8000/favicon.ico
 2026-05-18 19:04:26,022 - INFO - Completed in 0.0010s - Status: 404
+2026-05-18 19:09:47,971 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:09:48,077 - INFO - Completed in 0.1059s - Status: 200
+2026-05-18 19:11:35,364 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:11:35,374 - INFO - Completed in 0.0100s - Status: 200
+2026-05-18 19:11:35,601 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:11:35,605 - INFO - Completed in 0.0040s - Status: 200
+2026-05-18 19:12:01,343 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:12:01,481 - INFO - Completed in 0.1380s - Status: 200
+2026-05-18 19:13:51,750 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:13:51,753 - INFO - Completed in 0.0030s - Status: 200
+2026-05-18 19:13:51,806 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:13:51,810 - INFO - Completed in 0.0040s - Status: 200
+2026-05-18 19:13:51,819 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e9db2e4e-fe7f-4c0c-855e-cd8fccea0dbd
+2026-05-18 19:13:51,819 - INFO - Incoming request: GET http://127.0.0.1:8000/image/5ae8ce47-bb65-4135-841a-fc420ff80541
+2026-05-18 19:13:51,820 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c2cf38af-bf9b-4d7d-98f4-047301cb2e47
+2026-05-18 19:13:51,826 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 19:13:51,828 - INFO - Completed in 0.0080s - Status: 200
+2026-05-18 19:13:51,835 - INFO - Completed in 0.0168s - Status: 200
+2026-05-18 19:14:01,867 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:14:01,869 - INFO - Completed in 0.0020s - Status: 200
+2026-05-18 19:14:01,906 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:14:01,912 - INFO - Completed in 0.0051s - Status: 200
+2026-05-18 19:14:12,234 - INFO - Incoming request: POST http://127.0.0.1:8000/generate?prompt=make%20faisal%20bhai
+2026-05-18 19:14:12,247 - INFO - Completed in 0.0132s - Status: 200
+2026-05-18 19:14:13,799 - INFO - HTTP Request: GET https://huggingface.co/api/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 19:14:23,404 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell "HTTP/1.1 200 OK"
+2026-05-18 19:14:24,371 - INFO - Incoming request: GET http://127.0.0.1:8000/status/35b873e9-e307-4173-8824-cbb92bd444fe
+2026-05-18 19:14:24,376 - INFO - Completed in 0.0051s - Status: 200
+2026-05-18 19:14:24,379 - INFO - Incoming request: GET http://127.0.0.1:8000/status/35b873e9-e307-4173-8824-cbb92bd444fe
+2026-05-18 19:14:24,383 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:14:24,385 - INFO - Incoming request: GET http://127.0.0.1:8000/image/35b873e9-e307-4173-8824-cbb92bd444fe
+2026-05-18 19:14:24,385 - INFO - Completed in 0.0053s - Status: 200
+2026-05-18 19:14:24,390 - INFO - Incoming request: GET http://127.0.0.1:8000/status/35b873e9-e307-4173-8824-cbb92bd444fe
+2026-05-18 19:14:24,392 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 19:14:24,395 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 19:14:24,397 - INFO - Completed in 0.0143s - Status: 200
+2026-05-18 19:14:24,399 - INFO - Incoming request: GET http://127.0.0.1:8000/status/35b873e9-e307-4173-8824-cbb92bd444fe
+2026-05-18 19:14:24,402 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:14:24,406 - INFO - Completed in 0.0070s - Status: 200
+2026-05-18 19:14:24,407 - INFO - Completed in 0.0050s - Status: 200
+2026-05-18 19:14:24,412 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:14:24,420 - INFO - Completed in 0.0075s - Status: 200
+2026-05-18 19:14:24,422 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:14:24,426 - INFO - Completed in 0.0047s - Status: 200
+2026-05-18 19:15:06,109 - INFO - Incoming request: DELETE http://127.0.0.1:8000/image/35b873e9-e307-4173-8824-cbb92bd444fe
+2026-05-18 19:15:06,120 - INFO - Completed in 0.0110s - Status: 200
+2026-05-18 19:15:06,123 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:15:06,131 - INFO - Completed in 0.0073s - Status: 200
+2026-05-18 19:15:08,741 - INFO - Incoming request: GET http://127.0.0.1:8000/
+2026-05-18 19:15:08,742 - INFO - Completed in 0.0015s - Status: 200
+2026-05-18 19:15:08,759 - INFO - Incoming request: GET http://127.0.0.1:8000/history
+2026-05-18 19:15:08,765 - INFO - Completed in 0.0052s - Status: 200
+2026-05-18 19:15:08,771 - INFO - Incoming request: GET http://127.0.0.1:8000/image/e9db2e4e-fe7f-4c0c-855e-cd8fccea0dbd
+2026-05-18 19:15:08,772 - INFO - Incoming request: GET http://127.0.0.1:8000/image/5ae8ce47-bb65-4135-841a-fc420ff80541
+2026-05-18 19:15:08,773 - INFO - Incoming request: GET http://127.0.0.1:8000/image/c2cf38af-bf9b-4d7d-98f4-047301cb2e47
+2026-05-18 19:15:08,780 - INFO - Completed in 0.0083s - Status: 200
+2026-05-18 19:15:08,782 - INFO - Completed in 0.0113s - Status: 200
+2026-05-18 19:15:08,784 - INFO - Completed in 0.0115s - Status: 200
